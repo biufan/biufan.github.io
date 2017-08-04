@@ -194,17 +194,17 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <h1 id="1-WHAT-IS-THAT"><a href="#1-WHAT-IS-THAT" class="headerlink" title="1.WHAT IS THAT:"></a><strong>1.WHAT IS THAT:</strong></h1><p>Spring Boot 是基于 Spring4 的条件注册的一套快速开发整合包 Spring。 最初利用“工厂模式”（DI）和“代理模式”（AOP）解耦应用组件。大家觉得挺好用，于是按照这种模式搞了一个 MVC 框架（一些用Spring解耦的组件），用开发web应用（SpringMVC）。然后有发现每次开发都要搞很多依赖，写很多样板代码很麻烦，于是搞了一些懒人整合包（ starter ），这套就是 Spring Boot。 它以下优点：</p>
-<blockquote>
+                <h1 id="1-WHAT-IS-THAT"><a href="#1-WHAT-IS-THAT" class="headerlink" title="1.WHAT IS THAT:"></a><strong>1.WHAT IS THAT:</strong></h1><pre><code>Spring Boot 是基于 Spring4 的条件注册的一套快速开发整合包 Spring。 最初利用“工厂模式”（DI）和“代理模式”（AOP）解耦应用组件。大家觉得挺好用，于是按照这种模式搞了一个 MVC 框架（一些用Spring解耦的组件），用开发web应用（SpringMVC）。然后有发现每次开发都要搞很多依赖，写很多样板代码很麻烦，于是搞了一些懒人整合包（ starter ），这套就是 Spring Boot。 它以下优点：
+</code></pre><blockquote>
 <ul>
 <li>编码更简单</li>
 <li>配置更方便</li>
 <li>部署更容易</li>
 </ul>
 </blockquote>
-<p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p>
 <h1 id="2-WHAT-TO-DO"><a href="#2-WHAT-TO-DO" class="headerlink" title="2.WHAT TO DO:"></a><strong>2.WHAT TO DO:</strong></h1><p>1)使用<a href="http://start.spring.io" target="_blank" rel="external">start.spring.io</a>构建项目<br>2)使用Spring tools suite（eclipse）构建项目</p>
-<p>我们这里使用Spring tools suite。<br>1.新建一个Spring Starter Project<br><img src="http://ou1pkiocb.bkt.clouddn.com/Springboot1-1.png" alt="Springboot1-1"></p>
+<p>我们这里使用Spring tools suite。<br>1.新建一个Spring Starter Project，打包方式选择jar，开发方式选择Rest Repositories<br><img src="http://ou1pkiocb.bkt.clouddn.com/Springboot1-1.png" alt="Springboot1-1"><br>    在src/main/java下会生产一个人Application，这个就是程序的入口。由于SpringBoot内置了容器，所以直接运行main方法就可以启动web程序，而无须部署到容器。<br>2.添加一个测试类TestController<br><img src="http://ou1pkiocb.bkt.clouddn.com/Springboot1-3.png" alt="Springboot1-3"><br><figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="keyword">package</span> com.example.demo;</div><div class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RequestMapping;  </div><div class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.RestController;  </div><div class="line">  </div><div class="line"><span class="meta">@RestController</span>  </div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestController</span> </span>&#123;</div><div class="line">	<span class="meta">@RequestMapping</span>(<span class="string">"/First"</span>)  </div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">First</span><span class="params">()</span>  </span></div><div class="line"><span class="function">    </span>&#123;  </div><div class="line">        <span class="keyword">return</span> <span class="string">"My First SpringBoot Application"</span>;  </div><div class="line">    &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>3.项目右键，run as-&gt;SpringBoot App,在本地8080/First端口即可查看效果<br><img src="http://ou1pkiocb.bkt.clouddn.com/Springboot1-4.png" alt="Springboot1-4"></p>
 
                 <hr>
                 
