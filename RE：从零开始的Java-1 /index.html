@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        hello hexo｜BiuFan&#39;s blog
+        RE：从零开始的SpringBoot-1｜BiuFan&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="https://biufan.github.io/hello-hexo/">
+    <link rel="canonical" href="https://biufan.github.io/RE：从零开始的Java-1 /">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -79,15 +79,15 @@
                     
                         
 							
-								
+                        <li>
+                            <a href="/Tags/">tags</a>
+                        </li>
 							
 						
                     
                         
 							
-                        <li>
-                            <a href="/Tags/">tags</a>
-                        </li>
+								
 							
 						
                     
@@ -138,7 +138,7 @@
 
 
 <img class="wechat-title-img"
-     src="http://ou1pkiocb.bkt.clouddn.com/img/post-default.jpg">
+     src="http://ou1pkiocb.bkt.clouddn.com/post-default.jpg">
 
 
 <style>
@@ -155,23 +155,26 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>hello hexo</h1>
+                    <h1>RE：从零开始的SpringBoot-1</h1>
                     
-                    <h2 class="subheading">hexo下第一篇博文！</h2>
+                    <h2 class="subheading">第一集</h2>
                     
                     <span class="meta">
                          作者 BiuFan
                         <span>
-                          日期 2017-08-02
+                          日期 2017-03-01
                          </span>
                     </span>
                     <div class="tags text-center">
                         
+                        <a class="tag" href="/tags/#SpringBoot"
+                           title="SpringBoot">SpringBoot</a>
+                        
+                        <a class="tag" href="/tags/#JAVA"
+                           title="JAVA">JAVA</a>
+                        
                         <a class="tag" href="/tags/#Life"
                            title="Life">Life</a>
-                        
-                        <a class="tag" href="/tags/#Movies"
-                           title="Movies">Movies</a>
                         
                     </div>
                 </div>
@@ -180,7 +183,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            hello hexo
+            RE：从零开始的SpringBoot-1
         </span>
     </div>
 </header>
@@ -191,7 +194,13 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <p>hexo下第一篇博文！</p>
+                <h2 id="Java的基本数据类型"><a href="#Java的基本数据类型" class="headerlink" title="Java的基本数据类型"></a>Java的基本数据类型</h2><p>Java是一种强类型语言，要求每种变量都要求“先声明，在使用”。在Java中一共有8种基本类型，分别是：byte，sort，int，long，float，double，char，boolean。<br>| 类型        | 字节   |  取值范围  |<br>| ——–   | —–:  | :—-:  |<br>| byte       | 1       |   -128~127    |<br>| sort       |   2      |   -32 768~32 767   |<br>| int        |    4    |  -2 147 483 648~2 147 483 647  |<br>|long       |8          |-9 223 372 036 854 775 808~9 223 372 036 854 775 807|<br>|float      |     4|有效取值范围6~7位|<br>|double     |8      |有效取值范围15位|<br>    通常情况下，整形中最常用的是int，其他三种视情况而选择使用，当数据超过int表示范围的时候选择使用long（数值后加上L代表这个数值位long，like：987654321L），使用大量空间的大数组使用byte或者sort。浮点型中最常用的是double类型，float的使用场景很少，使用float时需要在数据后面加F。<br><figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="keyword">int</span> i=<span class="number">314</span> ；</div><div class="line"><span class="keyword">long</span> l=<span class="number">520L</span>；</div><div class="line"><span class="keyword">float</span> f=<span class="number">13.14f</span>;</div></pre></td></tr></table></figure></p>
+<pre><code>char用于表示单个字符。 
+</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="keyword">char</span> c=<span class="string">'A'</span> ；</div><div class="line"><span class="keyword">char</span> c1=<span class="number">65</span>；</div></pre></td></tr></table></figure>
+<pre><code>上述两行代码都表示大写字母A，因为char是16位的，采取的Unicode的编码方式，8位的ASCII码包含在Unicode中（0~127）。ps：中文字符的unicode是2个字节。
+boolean只有两个取值true和false，表示真和假。你可以用下面的语句定义一个名称为flag的布尔型变量：
+</code></pre><figure class="highlight java"><table><tr><td class="code"><pre><div class="line"><span class="keyword">boolean</span> flag=<span class="keyword">true</span>;</div></pre></td></tr></table></figure>
+<p>PS：String类型不是基本数据类型，它是一个类，属于引用数据类型。由于字符串是常用的数据类型。Java提供了对String类型特殊操作，直接引用<br><figure class="highlight java"><table><tr><td class="code"><pre><div class="line">String s=<span class="string">"hello  world"</span>；</div></pre></td></tr></table></figure></p>
 
                 <hr>
                 
@@ -203,6 +212,11 @@
                            title="RE：从零开始的SpringBoot-1">&larr; Previous Post</a>
                     </li>
                     
+                    
+                    <li class="next">
+                        <a href="/RE：从零开始的Java-2/" data-toggle="tooltip" data-placement="top"
+                           title="RE：从零开始的SpringBoot-1">Next Post &rarr;</a>
+                    </li>
                     
                 </ul>
 
@@ -236,7 +250,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java的基本数据类型"><span class="toc-text">Java的基本数据类型</span></a></li></ol>
                 </div>
             </div>
         </div>
@@ -258,11 +272,14 @@
                     </h5>
                     <div class="tags">
                         
+                        <a class="tag" href="/tags/#SpringBoot"
+                           title="SpringBoot">SpringBoot</a>
+                        
+                        <a class="tag" href="/tags/#JAVA"
+                           title="JAVA">JAVA</a>
+                        
                         <a class="tag" href="/tags/#Life"
                            title="Life">Life</a>
-                        
-                        <a class="tag" href="/tags/#Movies"
-                           title="Movies">Movies</a>
                         
                     </div>
                 </section>
